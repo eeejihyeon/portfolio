@@ -1,0 +1,38 @@
+.hidden {
+  display: none;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--point-color);
+  z-index: 9999;
+}
+
+.loading .welcome {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  top: 39.3%;
+  left: 44.3%;
+  /* -webkit-animation-name: spin;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; */
+}
+
+.spin {
+  animation: spin 5s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

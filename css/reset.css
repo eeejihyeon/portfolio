@@ -35,6 +35,8 @@ label {
 
 body {
   font-size: 16px;
+  color: var(--white-color);
+  background: var(--black-color);
 }
 
 ul,
