@@ -28,7 +28,7 @@
   animation: spin 5s infinite linear;
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
   }
