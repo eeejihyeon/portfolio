@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>LEEJIHYEON'S PORTFOLIO</title>
   </head>
@@ -16,19 +17,19 @@
       />
     </div>
 
-    <header>
-      <nav>
+    <header id="header">
+      <nav class="gnb">
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">PROJECT</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li class="menu menu_leave"><a href="#intro">HOME</a></li>
+          <li class="menu menu_leave"><a href="#about">ABOUT</a></li>
+          <li class="menu menu_leave"><a href="#project">PROJECT</a></li>
+          <li class="menu menu_leave"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="intro_wrap">
+    <main id="main">
+      <section id="intro" class="intro_wrap">
         <div class="intro_object">
           <div class="intro_circle">
             <div class="intro_title">
@@ -540,8 +541,9 @@
       <!-- CONTACT -->
     </main>
 
-    <footer></footer>
+    <footer id="footer"></footer>
 
     <script src="js/loading.js" defer></script>
+    <script src="js/gnb.js" defer></script>
   </body>
 </html>

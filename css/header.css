@@ -1,0 +1,69 @@
+.gnb {
+  position: fixed;
+  transform: rotate(90deg);
+  bottom: 25%;
+  right: -4%;
+}
+
+.gnb ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 300px;
+}
+
+.menu_leave {
+  text-indent: -9999px;
+  width: 27px;
+  height: 27px;
+  margin-left: 1.25rem;
+  border: 1px solid var(--point-color);
+  border-radius: 50%;
+  background-color: var(--black-color);
+
+  cursor: pointer;
+}
+
+.gnb ul li a {
+  display: block;
+  height: 100%;
+}
+
+.gnb ul li:hover {
+  text-indent: -9999px;
+  width: 27px;
+  height: 27px;
+  margin-left: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--point-color);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+/*  */
+
+.menu_select {
+  height: 27px;
+  padding: 0 1.25rem;
+  margin-left: 1.25rem;
+  border-radius: 100px;
+  line-height: 1.9rem;
+  background-color: var(--point-color);
+}
+/* 
+.menu_leave {
+  text-indent: -9999px;
+  width: 27px;
+  height: 27px;
+  margin-left: 1.25rem;
+  border: 1px solid var(--point-color);
+  border-radius: 50%;
+}
+ */
+.menu_enter {
+  text-indent: -9999px;
+  width: 27px;
+  height: 27px;
+  margin-left: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--point-color);
+}
