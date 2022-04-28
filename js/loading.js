@@ -1,21 +1,24 @@
 const loading = document.querySelector(".loading");
 const welcome = document.querySelector(".welcome");
+const gnb = document.querySelector(".gnb");
+const header = document.querySelector("#header");
+const main = document.querySelector("#main");
+
+const CLASS_HIDDEN = "hidden";
 
 function loadEvent() {
-  // console.log("로딩즁~");
+  // 로딩 중
+  header.classList.add(CLASS_HIDDEN);
+  main.classList.add(CLASS_HIDDEN);
   welcome.classList.add("spin");
-}
-
-function loadedEvent() {
-  console.log("로딩끝~");
+  // gnb.classList.add(CLASS_HIDDEN);
 }
 
 window.addEventListener("load", loadEvent);
 
 setTimeout(() => {
-  loading.classList.add("hidden");
+  // 로딩 끝
+  loading.classList.add(CLASS_HIDDEN);
+  header.classList.remove(CLASS_HIDDEN);
+  main.classList.remove(CLASS_HIDDEN);
 }, 5000);
-
-window.onload = (event) => {
-  welcome.classList.add("spin");
-};
