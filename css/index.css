@@ -2,6 +2,14 @@
   display: none;
 }
 
+.clear {
+  clear: both;
+}
+
+.box {
+  margin-bottom: 3.125rem;
+}
+
 .loading {
   width: 100%;
   height: 100vh;
@@ -134,4 +142,231 @@
 .intro_wrap .intro_content .conversion_btn img {
   width: 30px;
   margin: 10px auto 0;
+}
+
+/* Common */
+
+.title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 6.25rem;
+  background: var(--point-color);
+  /* overflow: hidden; */
+  margin-bottom: 5rem;
+  white-space: nowrap;
+}
+
+.title h1 {
+  font-size: 3rem;
+  line-height: 7rem;
+  letter-spacing: -1px;
+  animation: marquee 38s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.link_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3.75rem;
+}
+.link_container a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.75rem;
+  height: 2.925rem;
+  line-height: 3.5rem;
+  padding: 0.2rem 1.25rem 0;
+  margin-right: 1.25rem;
+  border-radius: 100px;
+  background: var(--point-color);
+}
+
+.link_container a span {
+  font-size: 1.25rem;
+}
+
+.link_container a img {
+  width: 24px;
+  height: 6.3px;
+  padding-bottom: 0.5rem;
+}
+
+.sub_title {
+  font-size: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+/* About */
+
+.about_wrap {
+  width: 90%;
+  /* height: 125vh; */
+  margin: 0 auto;
+}
+
+.about_wrap .info .info_container {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+}
+.about_wrap .info .info_container .info_content {
+  flex-basis: 50%;
+  flex-wrap: nowrap;
+}
+.about_wrap .info .info_container .info_content .introduce {
+  line-height: 1.5rem;
+}
+
+.about_wrap .info .info_container .info_content .personal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.about_wrap .info .info_container .info_content .personal li {
+}
+
+.about_wrap .info .info_container .info_content .personal .info_label {
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+  font-weight: bold;
+  float: left;
+}
+
+.about_wrap
+  .info
+  .info_container
+  .info_content
+  .personal
+  .info_value
+  ~ .info_value {
+  font-size: 1.125rem;
+  float: left;
+}
+
+.about_wrap .info .info_container .character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 35%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.about_wrap .info .info_container .character .char1 {
+  align-self: flex-start;
+  padding-left: 5rem;
+}
+
+.about_wrap .info .info_container .character .char2 {
+  align-self: flex-end;
+}
+
+.about_wrap .info .info_container .character .char4 {
+  align-self: flex-start;
+}
+
+.about_wrap .info .info_container .character .char5 {
+  align-self: flex-end;
+  padding-right: 5.5rem;
+}
+
+.skill .skill_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill .skill_container .skill_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill .skill_container .skill_item img {
+  width: 70%;
+}
+
+.skill .skill_container .skill_item .skill_label {
+  padding-top: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.skill .skill_container .skill_item .skill_value {
+  padding-top: 0.3125rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faq .faq_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq .faq_container .faq_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.faq .faq_container .faq_item button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: var(--white-color);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.faq .faq_container .faq_item button .faq_btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 1.25rem;
+  border: 1px solid var(--point-color);
+  border-radius: 50%;
+  background-color: none;
+
+  cursor: pointer;
+}
+
+.faq .faq_container .faq_item button .faq_que {
+  line-height: 1.3rem;
+}
+
+.faq .faq_container .faq_content {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 8rem;
+  padding: 4% 0;
+
+  background-color: var(--point-color);
+  border-radius: 180px;
+}
+
+.faq .faq_container .faq_content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  line-height: 1.5rem;
+  overflow: scroll;
 }
