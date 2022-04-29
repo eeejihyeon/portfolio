@@ -154,7 +154,7 @@
   height: 6.25rem;
   background: var(--point-color);
   /* overflow: hidden; */
-  margin-bottom: 5rem;
+  margin-bottom: 3.125rem;
   white-space: nowrap;
 }
 
