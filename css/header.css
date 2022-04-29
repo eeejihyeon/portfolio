@@ -3,6 +3,7 @@
   transform: rotate(90deg);
   bottom: 25%;
   right: -4%;
+  z-index: 9999;
 }
 
 .gnb ul {

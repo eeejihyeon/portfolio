@@ -153,7 +153,7 @@
   width: 100%;
   height: 6.25rem;
   background: var(--point-color);
-  /* overflow: hidden; */
+  overflow: hidden;
   margin-bottom: 3.125rem;
   white-space: nowrap;
 }
@@ -177,7 +177,7 @@
 .link_container {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 3.75rem;
+  margin-bottom: 3rem;
 }
 .link_container a {
   display: flex;
@@ -204,10 +204,10 @@
 
 .sub_title {
   font-size: 1.875rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.5rem;
 }
 
-/* About */
+/*** About ***/
 
 .about_wrap {
   width: 90%;
@@ -215,6 +215,7 @@
   margin: 0 auto;
 }
 
+/* A-info */
 .about_wrap .info .info_container {
   display: flex;
   flex-flow: row nowrap;
@@ -284,6 +285,7 @@
   padding-right: 5.5rem;
 }
 
+/* A-skill */
 .skill .skill_container {
   display: flex;
   justify-content: space-between;
@@ -313,6 +315,7 @@
   font-weight: bold;
 }
 
+/* A-faq */
 .faq .faq_container {
   display: flex;
   flex-direction: row;
@@ -369,4 +372,155 @@
   width: 80%;
   line-height: 1.5rem;
   overflow: scroll;
+}
+
+/*** PROJECT ***/
+
+#project {
+  height: 100vh;
+}
+.project_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* P-frontend */
+
+.project_content .project_detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project_content .project_detail .preview_container {
+  position: relative;
+}
+
+.project_content .project_detail .preview_container .preview .main_img {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 502px;
+  height: 502px;
+  border-radius: 50%;
+  border: 1px solid var(--point-color);
+}
+
+.project_content .project_detail .preview_container .preview .project_spin {
+  animation: spin 10s linear infinite;
+}
+
+.project_content .project_detail .preview_container .check {
+  position: absolute;
+  top: 43%;
+  left: -20%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--point-color);
+}
+
+.project_content .project_detail .detail_container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  /* height: 28.75rem; */
+  height: 80%;
+  border: 1px solid var(--point-color);
+  margin-top: 1.875rem;
+}
+
+.project_content .project_detail .detail_container .project_description {
+  height: 10.625rem;
+  padding: 1.875rem;
+  border-bottom: 1px solid var(--point-color);
+}
+
+.project_content .project_detail .detail_container .project_about {
+  height: 10.625rem;
+  padding: 1.875rem;
+}
+
+.text_title {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.project_about_content ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.project_about_content ul li {
+  margin-bottom: 0.625rem;
+}
+
+.project_content .project_detail .detail_container .project_label {
+  width: 20%;
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+  font-weight: bold;
+  float: left;
+}
+
+.project_content .project_detail .detail_container .project_value {
+  font-size: 1.125rem;
+}
+
+.project_content .project_detail .detail_container a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 2;
+  padding: 0.625rem 1.25rem 0.4rem;
+  border-radius: 10rem;
+  background-color: var(--point-color);
+}
+
+.project_content .project_detail .detail_container .project_about button {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.project_content .project_detail .detail_container .project_icon {
+  display: inline-block;
+  position: absolute;
+  top: 0.2rem;
+  right: 2rem;
+}
+.project_content .project_detail .detail_container .project_icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0.6rem;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: var(--white-color);
+}
+
+.project_content .project_detail .detail_container .project_icon::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0.6rem;
+  width: 1px;
+  height: 20px;
+  background-color: var(--white-color);
+}
+
+/*** CONTACT ***/
+
+#contact {
+  height: 100vh;
+}
+.contact_wrap {
+  width: 90%;
+  margin: 0 auto;
 }
