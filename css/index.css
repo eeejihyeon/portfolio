@@ -45,6 +45,33 @@
   }
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sa {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.sa-right {
+  transform: translate(-100px, 0);
+}
+
+.sa-left {
+  transform: translate(100px, 0);
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
 /* Intro */
 
 .intro_wrap {

@@ -35,8 +35,13 @@ label {
 
 body {
   font-size: 16px;
+  font-family: "heeboL", "heeboR", "heeboSB", "heeboB";
   color: var(--white-color);
   background: var(--black-color);
+}
+
+p {
+  font-family: "heeboR";
 }
 
 ul,
