@@ -209,9 +209,12 @@
 
 /*** About ***/
 
+/* #about {
+  height: 100vh;
+} */
+
 .about_wrap {
   width: 90%;
-  /* height: 125vh; */
   margin: 0 auto;
 }
 
@@ -375,12 +378,16 @@
 
 /*** PROJECT ***/
 
-#project {
+/* #project {
   height: 100vh;
-}
+} */
 .project_wrap {
   width: 90%;
   margin: 0 auto;
+}
+
+.project_container {
+  margin-bottom: 5rem;
 }
 
 /* P-frontend */
@@ -395,6 +402,7 @@
 
 .project_container .project_content .project_detail .preview_container {
   position: relative;
+  padding: 0 5% 0 0;
 }
 
 .project_container
@@ -406,8 +414,8 @@
   position: absolute;
   top: 12px;
   left: 12px;
-  width: 502px;
-  height: 502px;
+  width: 31.4375rem;
+  height: 31.4375rem;
   border-radius: 50%;
   border: 1px solid var(--point-color);
 }
@@ -439,6 +447,7 @@
   height: 80%;
   border: 1px solid var(--point-color);
   margin-top: 1.875rem;
+  animation: fadein 2s;
 }
 
 .project_container
@@ -446,7 +455,7 @@
   .project_detail
   .detail_container
   .project_description {
-  height: 10.625rem;
+  /* height: 10.625rem; */
   padding: 1.875rem;
   border-bottom: 1px solid var(--point-color);
 }
@@ -456,7 +465,7 @@
   .project_detail
   .detail_container
   .project_about {
-  height: 10.625rem;
+  /* height: 10.625rem; */
   padding: 1.875rem;
 }
 
@@ -465,6 +474,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.25rem;
+  text-align: left;
 }
 
 .project_about_content ul {
@@ -474,6 +484,8 @@
 }
 
 .project_about_content ul li {
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 0.5rem;
 }
 
@@ -482,9 +494,8 @@
   .project_detail
   .detail_container
   .project_label {
-  width: 20%;
+  width: 28%;
   font-size: 1.25rem;
-  margin-right: 1.25rem;
   font-weight: bold;
 }
 
@@ -525,7 +536,7 @@
   display: inline-block;
   position: absolute;
   top: 0.2rem;
-  right: 2rem;
+  right: 8%;
 }
 .project_container
   .project_content
@@ -559,18 +570,15 @@
 
 /*** CONTACT ***/
 
-#contact {
+/* #contact {
   height: 100vh;
-}
+} */
 .contact_wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-}
-.contact_wrap .comment {
-  height: 45vh;
 }
 
 .contact_wrap .comment .comment_container {
