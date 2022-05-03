@@ -26,10 +26,6 @@
   transform: translate(-50%, -50%);
   top: 39.3%;
   left: 44.3%;
-  /* -webkit-animation-name: spin;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear; */
 }
 
 .spin {
@@ -107,6 +103,7 @@
 }
 
 .intro_wrap .intro_object .intro_circle .intro_title h1 {
+  font-family: "heeboB";
   font-size: 5rem;
   line-height: 4rem;
   letter-spacing: -4px;
@@ -134,10 +131,10 @@
 }
 
 .intro_wrap .intro_content .intro_text .intro_txt {
+  font-family: "heeboL";
   font-size: 1.5rem;
   line-height: 1.5rem;
   letter-spacing: -1px;
-  font-weight: 400;
 }
 
 .intro_wrap .intro_content .intro_text .intro_txt:nth-child(1) {
@@ -164,6 +161,8 @@
 }
 
 .intro_wrap .intro_content .conversion_btn span {
+  font-family: "heeboL";
+
   margin-top: 10px;
 }
 .intro_wrap .intro_content .conversion_btn img {
