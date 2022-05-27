@@ -428,6 +428,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -444,12 +445,15 @@
   .preview
   .main_img {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 11px;
+  left: 11px;
   width: 31.4375rem;
   height: 31.4375rem;
   border-radius: 50%;
-  border: 1px solid var(--point-color);
+  border: 3px solid var(--point-color);
+  background: url(../images/project/script_project1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .project_container
@@ -467,8 +471,13 @@
   left: -20%;
   width: 250px;
   height: 250px;
+  transform: rotate(-15deg);
+  border: 5px solid var(--point-color);
   border-radius: 50%;
   background-color: var(--point-color);
+  background: url(../images/project/script_project1_cp.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .project_container .project_content .project_detail .detail_container {
@@ -478,7 +487,6 @@
   /* height: 28.75rem; */
   height: 80%;
   border: 1px solid var(--point-color);
-  margin-top: 2.5rem;
 }
 
 .project_container
@@ -502,6 +510,7 @@
 
 .text_title {
   color: var(--white-color);
+  font-family: "heeboB";
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.25rem;
