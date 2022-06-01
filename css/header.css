@@ -2,7 +2,7 @@
   position: fixed;
   transform: rotate(90deg);
   bottom: 25%;
-  right: -4%;
+  right: -4vw;
   z-index: 9999;
 }
 
@@ -15,8 +15,8 @@
 
 .menu_leave {
   text-indent: -9999px;
-  width: 27px;
-  height: 27px;
+  width: 1.5625vw;
+  height: 1.5625vw;
   margin-left: 1.25rem;
   border: 1px solid var(--point-color);
   border-radius: 50%;
@@ -33,11 +33,6 @@
 }
 
 .gnb ul li:hover {
-  text-indent: -9999px;
-  width: 27px;
-  height: 27px;
-  margin-left: 1.25rem;
-  border-radius: 50%;
   background-color: var(--point-color);
   transition: all 0.5s;
   cursor: pointer;

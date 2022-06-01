@@ -10,7 +10,6 @@ function loadEvent() {
   // 로딩 중
   header.classList.add(CLASS_HIDDEN);
   main.classList.add(CLASS_HIDDEN);
-  welcome.classList.add("spin");
   // gnb.classList.add(CLASS_HIDDEN);
 }
 
