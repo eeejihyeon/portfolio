@@ -1,67 +1,77 @@
 .gnb {
   position: fixed;
   transform: rotate(90deg);
-  bottom: 25%;
-  right: -4vw;
+  top: 58%;
+  right: 5vw;
   z-index: 9999;
 }
 
 .gnb ul {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  width: 300px;
+  gap: 1.0417vw;
+
+  width: 16.5vw;
 }
 
-.menu_leave {
-  text-indent: -9999px;
-  width: 1.5625vw;
-  height: 1.5625vw;
-  margin-left: 1.25rem;
-  border: 1px solid var(--point-color);
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  border-radius: 10vw;
+  /* padding: 0.5vw; */
+  cursor: pointer;
+}
+
+.menu_icon {
+  padding: 1.0417vw;
+  border: 1px solid var(--color-point);
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-
-  cursor: pointer;
 }
 
-.gnb ul li a {
+.menu_text {
+  display: none;
+}
+
+.menu_active {
+  color: var(--color-white);
+  padding: 0 1.0417vw;
+  background-color: var(--color-point);
+}
+
+.menu_active .menu_text {
   display: block;
-  height: 100%;
+  font-size: 1.0417vw;
+  font-weight: 500;
 }
 
-.gnb ul li:hover {
-  background-color: var(--point-color);
+.menu_active .menu_icon {
+  display: none;
+}
+
+.gnb ul li {
   transition: all 0.5s;
-  cursor: pointer;
 }
-/*  */
 
-.menu_select {
-  height: 27px;
-  padding: 0 1.25rem;
-  margin-left: 1.25rem;
-  border-radius: 100px;
-  line-height: 1.9rem;
-  background-color: var(--point-color);
+.menu_selected {
+  color: var(--color-white);
+  padding: 0 1.0417vw;
+  background-color: var(--color-point);
 }
-/* 
-.menu_leave {
-  text-indent: -9999px;
-  width: 27px;
-  height: 27px;
-  margin-left: 1.25rem;
-  border: 1px solid var(--point-color);
-  border-radius: 50%;
+
+.menu_selected .menu_text {
+  display: block;
+  font-size: 1.0417vw;
+  font-weight: 500;
 }
- */
-.menu_enter {
-  text-indent: -9999px;
-  width: 27px;
-  height: 27px;
-  margin-left: 1.25rem;
-  border-radius: 50%;
-  background-color: var(--point-color);
+
+.menu_selected .menu_icon {
+  display: none;
+  padding: 0vw;
 }

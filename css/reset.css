@@ -1,7 +1,7 @@
 :root {
-  --black-color: #101010;
-  --white-color: #ffffff;
-  --point-color: #2f2fff;
+  --color-black: #101010;
+  --color-white: #ffffff;
+  --color-point: #2f2fff;
 }
 
 body,
@@ -36,8 +36,8 @@ label {
 body {
   font-size: 0.8333vw;
   font-family: "Heebo", "SpoqaHanSansNeoR", sans-serif;
-  color: var(--white-color);
-  background: var(--black-color);
+  color: var(--color-white);
+  background: var(--color-black);
 }
 
 ul,
@@ -54,7 +54,7 @@ a {
   font-size: 0.8333vw;
   font-family: "Heebo", "SpoqaHanSansNeoR", sans-serif;
   text-decoration: none;
-  color: var(--white-color);
+  color: var(--color-white);
   cursor: pointer;
 }
 
