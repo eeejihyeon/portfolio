@@ -45,7 +45,7 @@ body {
 
 .about_intro .about_intro_container .about_intro_main .main_txt span {
   font-size: 4.1667vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   line-height: 4vw;
   color: var(--color-white);
 }
@@ -194,7 +194,7 @@ body {
   width: 80vw;
   font-family: "SpoqaHanSansNeoR";
   font-size: 7.8125vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   line-height: 7vw;
   letter-spacing: -0.2vw;
   color: transparent;
@@ -236,7 +236,7 @@ body {
 .about_wrap .info .info_container .info_content .personal .info_label {
   font-size: 1.25vw;
   margin-right: 1.0417vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   float: left;
 }
 
@@ -406,7 +406,7 @@ body {
 
 .keyword {
   font-size: 1.25vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   color: var(--color-white);
   border-radius: 10vw;
   padding: 0.2vw 1vw;
@@ -526,7 +526,7 @@ body {
   place-content: center;
   border-radius: 50%;
   font-size: 25px;
-  font-weight: bold;
+  font-family: "HeeboB";
   font-family: sans-serif;
   transition: all 0.5s;
   cursor: pointer;
@@ -592,7 +592,7 @@ body {
 
 .skill .skill_container .skill_item .skill_txt .skill_value {
   font-size: 2.5vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   line-height: 3vw;
 }
 
@@ -615,7 +615,7 @@ body {
   text-align: center;
   align-items: center;
   font-size: 1.5vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   color: var(--color-white);
   transition: all 0.5s;
 }
@@ -644,7 +644,7 @@ body {
   flex-basis: 25%;
   font-size: 1.5vw;
   text-align: center;
-  font-weight: bold;
+  font-family: "HeeboB";
   padding-right: 1.5vw;
 }
 

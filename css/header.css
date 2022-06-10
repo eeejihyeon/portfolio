@@ -48,7 +48,8 @@
 .menu_active .menu_text {
   display: block;
   font-size: 1.0417vw;
-  font-weight: 500;
+  font-family: "HeeboM";
+  line-height: 0.8vw;
 }
 
 .menu_active .menu_icon {
@@ -68,7 +69,8 @@
 .menu_selected .menu_text {
   display: block;
   font-size: 1.0417vw;
-  font-weight: 500;
+  font-family: "HeeboM";
+  line-height: 0.8vw;
 }
 
 .menu_selected .menu_icon {

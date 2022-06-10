@@ -52,7 +52,7 @@
 
 .project_intro .project_intro_container .project_intro_main .main_txt span {
   font-size: 4.1667vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   line-height: 4vw;
   color: var(--color-white);
 }
@@ -176,7 +176,7 @@
 .project_container .project_box ul {
   display: flex;
   justify-content: flex-start;
-  width: 147.3292vw;
+  width: 100%;
   transition: all 0.8s;
 }
 
@@ -229,6 +229,12 @@
   background-position: center;
 }
 
+.w_img3 {
+  background: url(../images/project/web_project3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .preview svg {
   position: absolute;
   top: -6.2vw;
@@ -255,6 +261,12 @@
 
 .w_c_img1 {
   background: url(../images/project/web_project1_cp.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.w_c_img3 {
+  background: url(../images/project/web_project3_cp.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -287,22 +299,26 @@
 .text_title {
   color: var(--color-white);
   font-size: 1.4583vw;
-  font-weight: bold;
+  font-family: "HeeboB";
   margin-bottom: 1.25rem;
   text-align: left;
   animation: titletop 3s forwards;
 }
 
-.project_project_content ul {
+.project_about_detail ul {
   display: flex;
   flex-direction: column;
   margin-bottom: 4%;
 }
 
-.project_project_content ul li {
+.project_about_detail ul li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.project_about_detail ul li:nth-child(2) {
+  align-items: start;
 }
 
 .project_container
@@ -312,12 +328,33 @@
   .project_label {
   width: 7vw;
   font-size: 1.1458vw;
-  font-weight: bold;
+  font-family: "HeeboB";
 }
 
 .project_value {
+  width: 100%;
   font-size: 1.0417vw;
   line-height: 1.5vw;
+}
+
+.project_container
+  .project_content
+  .project_detail
+  .detail_container
+  .project_about
+  .project_value {
+  width: 75%;
+  font-size: 1.0417vw;
+  line-height: 1.5vw;
+}
+
+.project_container
+  .project_content
+  .project_detail
+  .detail_container
+  .project_about
+  .project_value:nth-child(2) {
+  line-height: 1.7vw;
 }
 
 .project_container
@@ -331,7 +368,7 @@
   display: flex;
   font-family: "Heebo";
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "HeeboB";
 }
 
 .project_container
@@ -401,44 +438,34 @@
   margin-left: 3vw;
 }
 
-.script_img1 {
+.project_container_script
+  .project_content
+  .project_detail
+  .preview_container
+  .preview
+  .main_img {
   width: 28vw;
   height: 28vw;
   border-radius: 50%;
   border: 3px solid var(--color-point);
-  background: url(../images/project/script_project1.png) no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.script_img1 {
+  background: url(../images/project/script_project1.png) no-repeat;
 }
 
 .script_img2 {
-  width: 28vw;
-  height: 28vw;
-  border-radius: 50%;
-  border: 3px solid var(--color-point);
   background: url(../images/project/script_project2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .script_img3 {
-  width: 28vw;
-  height: 28vw;
-  border-radius: 50%;
-  border: 3px solid var(--color-point);
-  background: var(--color-point);
-  background-size: cover;
-  background-position: center;
+  background: url(../images/project/script_project3.png) no-repeat;
 }
 
 .script_img4 {
-  width: 28vw;
-  height: 28vw;
-  border-radius: 50%;
-  border: 3px solid var(--color-point);
-  background: var(--color-point);
-  background-size: cover;
-  background-position: center;
+  background: url(../images/project/script_project4.png) no-repeat;
 }
 
 .project_container_script .preview svg,
@@ -510,12 +537,12 @@
   cursor: pointer;
 }
 
-.view_btn a {
+.view_btn span {
   position: relative;
   left: 0;
   transition: all 0.3s ease-Out;
   font-size: 0.9375vw;
-  font-weight: bold;
+  font-family: "HeeboB";
 }
 
 .view_btn .view_arrow {
@@ -523,18 +550,18 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0.6vw;
+  top: 0.7vw;
   right: -6.5104vw;
   transition: all 0.3s ease-Out;
 }
 
 .view_btn .view_arrow img {
-  width: 2.4vw;
+  width: 2vw;
 }
 
-.view_btn:hover a {
+.view_btn:hover span {
   left: -6.5104vw;
 }
 .view_btn:hover .view_arrow {
-  right: 1.95vw;
+  right: 2.2vw;
 }

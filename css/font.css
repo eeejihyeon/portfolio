@@ -16,3 +16,15 @@
   src: url("../fonts/Heebo/static/Heebo-Regular.ttf") format("truetype");
   unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
+
+@font-face {
+  font-family: "HeeboM";
+  src: url("../fonts/Heebo/static/Heebo-Medium.ttf") format("truetype");
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+@font-face {
+  font-family: "HeeboB";
+  src: url("../fonts/Heebo/static/Heebo-Bold.ttf") format("truetype");
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
