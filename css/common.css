@@ -31,7 +31,7 @@
 }
 
 .loading svg {
-  width: 15vw;
+  width: 12vw;
 }
 
 .loading textPath {
@@ -183,17 +183,12 @@
 }
 
 .sub_title {
-  /* font-size: 2.0833vw;
-  font-family: "HeeboB";  
-  margin-bottom: 1.25vw; */
-  /* animation: titletop 1.5s forwards; */
-
   position: relative;
   display: flex;
   justify-content: center;
-  font-size: 12vw;
+  font-size: 10vw;
   font-family: "HeeboB";
-  line-height: 15vw;
+  line-height: 12vw;
   letter-spacing: -0.2vw;
   margin-bottom: 1.25vw;
   color: transparent;
