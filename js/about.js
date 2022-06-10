@@ -1,12 +1,6 @@
 let tl = gsap.timeline();
 
 tl.fromTo(
-  "#subTitle1",
-  { y: 20, opacity: 0 },
-  { duration: 1, y: 0, opacity: 1 }
-);
-
-tl.fromTo(
   ".personal",
   { x: -100, opacity: 0 },
   { duration: 1, x: 0, opacity: 1 }
