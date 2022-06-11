@@ -14,12 +14,7 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 90%;
-  margin: 0 auto;
-}
-
-.contact_wrap .box {
-  padding-top: 2.5vw;
-  padding-bottom: 1.5vw;
+  margin: 3.75vw auto 0;
 }
 
 @comment {
@@ -114,8 +109,8 @@ body {
 }
 
 .contact_container .circle {
-  width: 35vw;
-  height: 35vw;
+  width: 34vw;
+  height: 34vw;
   border: 3px solid var(--color-point);
   border-radius: 50%;
   background-color: var(--color-point);
@@ -162,6 +157,7 @@ body {
 }
 
 .contact_container .info:nth-child(1) span {
+  font-family: "HeeboB";
   font-size: 1.25vw;
 }
 
@@ -174,6 +170,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 1.0417vw;
 }
 
 .contact_container .link .link_container {
