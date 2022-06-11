@@ -195,12 +195,16 @@
   -webkit-text-stroke: 1px var(--color-point);
   text-align: center;
   white-space: nowrap;
+  opacity: 0;
+  transform: translateY(5vw);
 }
 
 .title_bg {
   position: absolute;
   top: 0;
   color: var(--color-point);
+  opacity: 0;
+  transform: translateY(5vw);
 }
 
 footer {

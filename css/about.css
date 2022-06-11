@@ -41,6 +41,7 @@ body {
   margin: 0 auto 1.5625vw;
   border-radius: 50%;
   background-color: var(--color-point);
+  animation: fadein 5s forwards;
 }
 
 .about_intro .about_intro_container .about_intro_main .main_txt span {
@@ -57,6 +58,7 @@ body {
   text-align: left;
   width: 26vw;
   letter-spacing: -0.2vw;
+  animation: fadeleft 5s forwards;
 }
 
 .txt_right {
@@ -66,6 +68,7 @@ body {
   text-align: right;
   width: 25.4vw;
   letter-spacing: -0.2vw;
+  animation: faderight 5s forwards;
 }
 
 .about_intro .about_intro_container .about_intro_main .scroll_arrow {
@@ -226,6 +229,8 @@ body {
   border-radius: 2vw;
   background: var(--color-point);
   color: var(--color-white);
+  opacity: 0;
+  transform: translateY(5vw);
 }
 
 .about_wrap .info .info_container .info_content .personal li {
@@ -272,12 +277,29 @@ body {
   padding: 0.8vw 0;
 }
 
+.about_wrap .info .info_container .info_content .introduce_txt .txt1 {
+  opacity: 0;
+  transform: translateY(1vw);
+}
+
+.about_wrap .info .info_container .info_content .introduce_txt .txt2 {
+  opacity: 0;
+  transform: translateY(1vw);
+}
+
+.about_wrap .info .info_container .info_content .introduce_txt .txt3 {
+  opacity: 0;
+  transform: translateY(1vw);
+}
+
 .about_wrap .info .info_container .info_content .introduce_txt .info_circle1 {
   width: 15vw;
   height: 7.5vw;
   border-radius: 0 0 16vw 16vw;
   background-color: var(--color-point);
   margin: 0 auto;
+  opacity: 0;
+  transform: translateX(1vw);
 }
 
 .about_wrap .info .info_container .info_content .introduce_txt .info_circle2 {
@@ -286,6 +308,8 @@ body {
   border-radius: 50%;
   background-color: var(--color-point);
   margin: 0 auto;
+  opacity: 0;
+  transform: translateX(-1vw);
 }
 
 .about_wrap .info .info_container .info_content .introduce_txt .info_circle3 {
@@ -294,6 +318,8 @@ body {
   border-radius: 0 12vw 12vw 0;
   background-color: var(--color-point);
   margin-left: 4.8vw;
+  opacity: 0;
+  transform: translateX(1vw);
 }
 
 .about_wrap .info .info_container .info_content .introduce_txt .info_circle4 {
@@ -301,6 +327,8 @@ body {
   height: 10vw;
   border-radius: 12vw 0 0 12vw;
   background-color: var(--color-point);
+  opacity: 0;
+  transform: translateX(1vw);
 }
 
 /* A-advantage */
@@ -322,6 +350,7 @@ body {
   border: 1px solid var(--color-point);
   border-radius: 50%;
   margin: 4.5vw;
+  opacity: 0;
 }
 
 .dot {
@@ -421,6 +450,8 @@ body {
   left: 13.6vw;
   display: flex;
   flex-direction: row;
+  opacity: 0;
+  transform: translateX(2vw);
 }
 
 .key1 .keyword {
@@ -433,6 +464,8 @@ body {
   right: -16.5vw;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: translateX(2vw);
 }
 
 .key2 .keyword {
@@ -445,6 +478,8 @@ body {
   right: -10vw;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: translateX(2vw);
 }
 
 .key3 .keyword {
@@ -459,6 +494,8 @@ body {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  opacity: 0;
+  transform: translateX(-2vw);
 }
 
 .key4 .keyword {
@@ -473,6 +510,8 @@ body {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+  opacity: 0;
+  transform: translateX(-2vw);
 }
 
 .key5 .keyword {
@@ -512,6 +551,31 @@ body {
   border: 1px solid var(--color-point);
   border-radius: 50%;
 } */
+
+.html {
+  opacity: 0;
+  transform: translateY(2vw);
+}
+.css {
+  opacity: 0;
+  transform: translateY(2vw);
+}
+.js {
+  opacity: 0;
+  transform: translateY(2vw);
+}
+.react {
+  opacity: 0;
+  transform: translateY(2vw);
+}
+.ts {
+  opacity: 0;
+  transform: translateY(2vw);
+}
+.php {
+  opacity: 0;
+  transform: translateY(2vw);
+}
 
 .skill_item {
   --p: 20;
@@ -603,6 +667,7 @@ body {
   margin-top: 4vw;
   border-radius: 100vw;
   background-color: var(--color-point);
+  opacity: 0;
 }
 
 .skill_click {

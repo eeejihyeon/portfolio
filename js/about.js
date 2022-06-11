@@ -1,88 +1,117 @@
-let tl = gsap.timeline();
+gsap.registerPlugin(ScrollTrigger);
 
-tl.fromTo(
-  ".personal",
-  { x: -100, opacity: 0 },
-  { duration: 1, x: 0, opacity: 1 }
-);
+// gsap.to("#subTitle1", {
+//   x: 700,
+//   opacity: 1,
+//   duration: 5,
+//   scrollTrigger: {
+//     trigger: ".about_intro_main",
+//     start: "top center",
+// markers: true,
+//   },
+// });
 
-tl.fromTo(
-  ".introduce",
-  { y: 20, opacity: 0 },
-  { duration: 1, y: 0, opacity: 1 }
-);
-
-tl.fromTo(
-  "#subTitle2",
-  { y: 20, opacity: 0 },
-  { duration: 1, y: 0, opacity: 1 }
-);
-
-tl.fromTo(
-  "#subTitle3",
-  { y: 20, opacity: 0 },
-  { duration: 1, y: 0, opacity: 1 }
-);
-
-tl.fromTo(".html", { y: 20, opacity: 0 }, { duration: 0.5, y: 0, opacity: 1 });
-
-tl.fromTo(".css", { y: 20, opacity: 0 }, { duration: 0.5, y: 0, opacity: 1 });
-
-tl.fromTo(".js", { y: 20, opacity: 0 }, { duration: 0.5, y: 0, opacity: 1 });
-
-tl.fromTo(".react", { y: 20, opacity: 0 }, { duration: 0.5, y: 0, opacity: 1 });
-
-tl.fromTo(".ts", { y: 20, opacity: 0 }, { duration: 0.5, y: 0, opacity: 1 });
-
-tl.fromTo(".php", { y: 20, opacity: 0 }, { duration: 0.5, y: 0, opacity: 1 });
-
-tl.to(".gnb", {
-  duration: 1,
-  delay: -1.5,
-  x: 0,
-  opacity: 1,
-  ease: Back.easeOut.config(1.7),
-});
-
-gsap.to(".cont1_img2", {
+let tlInfo = gsap.timeline({
   scrollTrigger: {
-    trigger: ".cont1_img2",
-    start: "top 50%",
+    trigger: ".about_intro",
+    start: "top 80%",
+    // markers: true,
     toggleActions: "restart none none none",
   },
-  duration: 1,
+});
+
+tlInfo.to(".info #subTitle1 ", { duration: 1, y: 0, opacity: 1 });
+
+tlInfo.to(".info #subTitle1 .title_bg", { duration: 0.5, y: 0, opacity: 1 });
+
+tlInfo.to(".info .personal", { duration: 1, y: 0, opacity: 1 });
+
+tlInfo.to(".info .txt1", { duration: 0.8, y: 0, opacity: 1 });
+
+tlInfo.to(".info .txt2", { duration: 0.8, y: 0, opacity: 1 });
+
+tlInfo.to(".info .txt3", { duration: 0.8, y: 0, opacity: 1 });
+
+tlInfo.to(".info .info_circle1", { duration: 0.5, x: 0, opacity: 1 });
+
+tlInfo.to(".info .info_circle2", { duration: 0.5, x: 0, opacity: 1 });
+
+tlInfo.to(".info .info_circle3 ", { duration: 0.5, x: 0, opacity: 1 });
+tlInfo.to(".info .info_circle4 ", { duration: 0.5, x: 0, opacity: 1 });
+
+let tlAdv = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".info",
+    start: "top 80%",
+    // markers: true,
+    toggleActions: "restart none none none",
+  },
+});
+
+tlAdv.to(".advantage #subTitle2 ", { duration: 1, y: 0, opacity: 1 });
+
+tlAdv.to(".advantage #subTitle2 .title_bg", {
+  duration: 0.5,
   y: 0,
   opacity: 1,
-  ease: Back.easeOut.config(1.7),
 });
 
-// Skill Description Event
+tlAdv.to(".advantage .graph", { duration: 1, opacity: 1 });
 
-const skillBtns = document.querySelectorAll(".skill_item");
-const skillContents = document.querySelectorAll(".skill_desc");
-const skillClick = document.querySelector(".skill_click");
+tlAdv.to(".advantage .key1", { duration: 0.8, x: 0, opacity: 1 });
 
-skillBtns.forEach(function (btn) {
-  btn.addEventListener("click", openDesc);
+tlAdv.to(".advantage .key2", { duration: 0.8, x: 0, opacity: 1 });
+tlAdv.to(".advantage .key3", { duration: 0.8, x: 0, opacity: 1 });
+tlAdv.to(".advantage .key4", { duration: 0.8, x: 0, opacity: 1 });
+tlAdv.to(".advantage .key5", { duration: 0.8, x: 0, opacity: 1 });
+
+let tlSkill = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".advantage",
+    start: "top 80%",
+    // markers: true,
+    toggleActions: "restart none none none",
+  },
 });
 
-function openDesc(btn) {
-  let btnTarget = btn.currentTarget;
-  var skill = btnTarget.dataset.skill;
+tlSkill.to(".skill #subTitle3 ", { duration: 1, y: 0, opacity: 1 });
 
-  // 클릭 안내 텍스트 지우기
-  skillClick.classList.remove("skill_desc_active");
-  skillClick.classList.add("skill_desc");
+tlSkill.to(".skill #subTitle3 .title_bg", { duration: 0.5, y: 0, opacity: 1 });
 
-  skillContents.forEach(function (btn) {
-    btn.classList.remove("skill_desc_active");
-  });
+tlSkill.to(".skill .html", {
+  duration: 0.5,
+  y: 0,
+  opacity: 1,
+});
 
-  skillBtns.forEach(function (btn) {
-    btn.classList.remove("skill_desc_active");
-  });
+tlSkill.to(".skill .css", {
+  duration: 0.5,
+  y: 0,
+  opacity: 1,
+});
 
-  document.querySelector("#" + skill).classList.add("skill_desc_active");
+tlSkill.to(".skill .js", {
+  duration: 0.5,
+  y: 0,
+  opacity: 1,
+});
 
-  btnTarget.classList.add("skill_desc_active");
-}
+tlSkill.to(".skill .react", {
+  duration: 0.5,
+  y: 0,
+  opacity: 1,
+});
+
+tlSkill.to(".skill .ts", {
+  duration: 0.5,
+  y: 0,
+  opacity: 1,
+});
+
+tlSkill.to(".skill .php", {
+  duration: 0.5,
+  y: 0,
+  opacity: 1,
+});
+
+tlSkill.to(".skill .skill_desc_container", { duration: 1, opacity: 1 });
