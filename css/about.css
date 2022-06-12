@@ -22,6 +22,7 @@ body {
   height: calc(100vh - 5vw);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about_intro .about_intro_container {
