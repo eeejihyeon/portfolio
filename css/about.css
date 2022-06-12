@@ -16,7 +16,13 @@ body {
   overflow: hidden;
 }
 
-/* A-intro */
+/* A: intro */
+
+.about_intro {
+  height: calc(100vh - 5vw);
+  display: flex;
+  justify-content: center;
+}
 
 .about_intro .about_intro_container {
   /* position: relative;
@@ -58,7 +64,7 @@ body {
   text-align: left;
   width: 26vw;
   letter-spacing: -0.2vw;
-  animation: fadeleft 5s forwards;
+  animation: fadeleft 3s forwards;
 }
 
 .txt_right {
@@ -68,7 +74,7 @@ body {
   text-align: right;
   width: 25.4vw;
   letter-spacing: -0.2vw;
-  animation: faderight 5s forwards;
+  animation: faderight 3s forwards;
 }
 
 .about_intro .about_intro_container .about_intro_main .scroll_arrow {
@@ -209,7 +215,11 @@ body {
   width: 60vw;
 }
 
-/* A-info */
+/* A: info */
+
+.about_wrap .info {
+  height: 100vh;
+}
 
 .about_wrap .info .info_container {
   display: flex;
@@ -331,7 +341,11 @@ body {
   transform: translateX(1vw);
 }
 
-/* A-advantage */
+/* A: advantage */
+
+.about_wrap .advantage {
+  height: 100vh;
+}
 
 .about_wrap .advantage .advantage_container {
   display: flex;

@@ -1,28 +1,26 @@
 /*** PROJECT ***/
 
-/* #project {
-  height: 100vh;
-} */
-
 .project_wrap {
   width: 90%;
-  margin-bottom: 4.1667vw;
+  margin-bottom: 5.2083vw;
   padding: 0 5%;
   overflow: hidden;
 }
 
 .project {
-  margin-bottom: 5vw;
+  margin-bottom: 2.5vw;
 }
 
 .project_wrap .sub_title {
   margin: 0;
 }
 
-.project_list .project_list_box {
+/* P: intro */
+
+.project_intro {
+  height: calc(100vh - 5vw);
   display: flex;
-  justify-content: column;
-  transition: all 0.8s;
+  justify-content: center;
 }
 
 .project_intro .project_intro_container {
@@ -48,6 +46,7 @@
   margin: 0 auto 1.5625vw;
   border-radius: 50%;
   background-color: var(--color-point);
+  animation: fadein 5s forwards;
 }
 
 .project_intro .project_intro_container .project_intro_main .main_txt span {
@@ -64,6 +63,7 @@
   text-align: left;
   width: 27vw;
   letter-spacing: -0.2vw;
+  animation: fadeleft 3s forwards;
 }
 
 .txt_right {
@@ -73,6 +73,7 @@
   text-align: right;
   width: 27vw;
   letter-spacing: -0.2vw;
+  animation: faderight 3s forwards;
 }
 
 .project_intro .project_intro_container .project_intro_main .scroll_arrow {
@@ -133,11 +134,18 @@
 
 /* P: WEB SITE */
 
+.project_list .project_list_box {
+  display: flex;
+  justify-content: column;
+  transition: all 0.8s;
+}
+
 .slide_btn {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-top: 0.5208vw;
+  opacity: 0;
 }
 
 .slide_btn li {
@@ -168,6 +176,10 @@
 
 /* P: frontend */
 
+/* .project_container {
+  height: 100vh;
+} */
+
 .project_container .project_box {
   width: 90vw;
   overflow: hidden;
@@ -178,6 +190,16 @@
   justify-content: flex-start;
   width: 100%;
   transition: all 0.8s;
+}
+
+.cont1 {
+  opacity: 0;
+  transform: translateY(2vw);
+}
+
+.cont2 {
+  opacity: 0;
+  transform: translateY(2vw);
 }
 
 .project_container .project_box .project_content {
@@ -195,11 +217,13 @@
   position: relative;
   padding: 2vw;
   margin-right: 6vw;
-  animation: fadeleft 2s forwards;
+  /* animation: fadeleft 2s forwards; */
 }
 
 .preview {
   position: relative;
+  opacity: 0;
+  transform: translateY(2vw);
 }
 
 .project_container
@@ -256,7 +280,10 @@
   transform: rotate(-15deg);
   border: 5px solid var(--color-point);
   border-radius: 50%;
-  animation: recoil 2s forwards;
+  opacity: 0;
+  transform: rotate(0deg);
+
+  /* animation: recoil 2s forwards; */
 }
 
 .w_c_img1 {
@@ -276,7 +303,9 @@
   flex-direction: column;
   width: 32vw;
   border: 1px solid var(--color-point);
-  animation: faderight 2s forwards;
+  /* animation: faderight 2s forwards; */
+  opacity: 0;
+  transform: translateX(5vw);
 }
 
 .project_container
