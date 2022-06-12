@@ -104,10 +104,6 @@
   line-height: 1vw;
   margin-top: 10px;
 }
-.intro_wrap .intro_content .conversion_btn img {
-  width: 30px;
-  margin: 10px auto 0;
-}
 
 @keyframes conversion {
   0% {
@@ -118,7 +114,8 @@
   }
   100% {
     transform: rotateY(0deg);
-    background-color: orangered;
+    color: var(--color-black);
+    background-color: #e8ff06;
   }
 }
 
