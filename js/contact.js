@@ -4,7 +4,7 @@ let tlContact = gsap.timeline({
   scrollTrigger: {
     trigger: ".contact_wrap",
     start: "top 70%",
-    markers: true,
+    // markers: true,
     toggleActions: "restart none none none",
   },
 });
