@@ -10,11 +10,135 @@ body {
 }
 
 .contact_wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 90%;
-  margin: 3.75vw auto 0;
+  padding: 0 5%;
+  overflow: hidden;
+}
+
+.contact_intro {
+  height: calc(100vh - 5vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_intro .contact_intro_container {
+  /* position: relative;
+  height: 70vh; */
+  margin: 4.1667vw 0;
+}
+
+.contact_intro .contact_intro_container .contact_intro_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_intro .contact_intro_container .contact_intro_main .main_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 37.5vw;
+  height: 37.5vw;
+  margin: 0 auto 1.5625vw;
+  border-radius: 50%;
+  background-color: var(--color-point);
+  animation: fadein 5s forwards;
+}
+
+.contact_intro .contact_intro_container .contact_intro_main .main_txt span {
+  font-size: 4.1667vw;
+  font-family: "HeeboB";
+  line-height: 4vw;
+  color: var(--color-white);
+}
+
+.contact_intro
+  .contact_intro_container
+  .contact_intro_main
+  .main_txt
+  span:nth-child(3) {
+  font-family: "HeeboR";
+  font-size: 1.0417vw;
+  text-align: center;
+}
+
+.txt_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 18vw;
+  letter-spacing: -0.2vw;
+  animation: fadeleft 3s forwards;
+}
+
+.txt_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  width: 19vw;
+  letter-spacing: -0.2vw;
+  animation: faderight 3s forwards;
+}
+
+.contact_intro .contact_intro_container .contact_intro_main .scroll_arrow {
+  position: relative;
+  margin-top: 0.4vw;
+}
+
+.contact_intro .contact_intro_container .contact_intro_main .scroll_arrow span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1.0417vw;
+  height: 1.0417vw;
+  margin-left: -0.502vw;
+  border-left: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  transform: rotate(-45deg);
+  animation: scroll 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+.contact_intro
+  .contact_intro_container
+  .contact_intro_main
+  .scroll_arrow
+  span:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.contact_intro
+  .contact_intro_container
+  .contact_intro_main
+  .scroll_arrow
+  span:nth-of-type(2) {
+  top: 0.8vw;
+  animation-delay: 0.15s;
+}
+.contact_intro
+  .contact_intro_container
+  .contact_intro_main
+  .scroll_arrow
+  span:nth-of-type(3) {
+  top: 1.6vw;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @comment {
@@ -94,6 +218,14 @@ body {
   }
 }
 
+.contact_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .contact_container {
   display: flex;
   flex-direction: column;
@@ -118,6 +250,8 @@ body {
   background: url(../images/leejihyeon.png) no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0;
+  transform: translateY(5vw);
 }
 
 @keyframes conversion {
@@ -165,6 +299,18 @@ body {
   margin-left: 0.5208vw;
 }
 
+.info1,
+.info2,
+.info3,
+.info4 {
+  opacity: 0;
+  transform: translateX(-3vw);
+}
+
+.copy {
+  opacity: 0;
+}
+
 .contact_container .link {
   display: flex;
   flex-direction: column;
@@ -175,6 +321,11 @@ body {
 
 .contact_container .link .link_container {
   margin: 0.5vw 0;
+}
+
+.move_btn {
+  opacity: 0;
+  transform: translateX(3vw);
 }
 
 .contact_container .contact {
@@ -195,6 +346,8 @@ body {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  opacity: 0;
+  transform: translateX(3vw);
 }
 
 .contact .email:hover .text {
