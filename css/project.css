@@ -133,7 +133,7 @@
   }
 }
 
-/* P: WEB SITE */
+/* common */
 
 .project_list .project_list_box {
   display: flex;
@@ -175,11 +175,11 @@
   background-color: var(--color-point);
 }
 
-/* P: frontend */
+/* P: WEB SITE */
 
-/* .project_container {
+.project_container {
   height: 100vh;
-} */
+}
 
 .project_container .project_box {
   width: 90vw;
@@ -443,6 +443,10 @@
 }
 
 /* P: SCRIPT */
+
+.project_container_script {
+  height: 100vh;
+}
 
 .project_container_script .project_box,
 .project_container_animation .project_box {

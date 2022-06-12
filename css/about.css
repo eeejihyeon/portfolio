@@ -11,7 +11,6 @@ body {
 
 .about_wrap {
   width: 90%;
-  margin-bottom: 5.2083vw;
   padding: 0 5%;
   overflow: hidden;
 }
@@ -540,6 +539,10 @@ body {
 }
 
 /* A-skill */
+
+.skill {
+  height: calc(100vh - 9.375vw);
+}
 
 .skill .skill_container {
   display: flex;
