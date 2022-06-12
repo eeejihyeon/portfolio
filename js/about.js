@@ -37,7 +37,12 @@ tlInfo.to(".info .info_circle1", { duration: 0.5, x: 0, opacity: 1 });
 tlInfo.to(".info .info_circle2", { duration: 0.5, x: 0, opacity: 1 });
 
 tlInfo.to(".info .info_circle3 ", { duration: 0.5, x: 0, opacity: 1 });
-tlInfo.to(".info .info_circle4 ", { duration: 0.5, x: 0, opacity: 1 });
+tlInfo.to(".info .info_circle4 ", {
+  duration: 0.5,
+  x: 0,
+  opacity: 1,
+  delay: -0.5,
+});
 
 let tlAdv = gsap.timeline({
   scrollTrigger: {
