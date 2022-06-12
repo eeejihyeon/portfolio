@@ -17,9 +17,15 @@ tlWeb.to(".project_container #subTitle1 .title_bg", {
   opacity: 1,
 });
 
-tlWeb.to(".project_box .preview", { duration: 1, y: 0, opacity: 1 });
+tlWeb.to(".project_box .preview", { duration: 0.8, y: 0, opacity: 1 });
 
-tlWeb.to(".project_box .check", { duration: 1, x: 0, rotate: 345, opacity: 1 });
+tlWeb.to(".project_box .check", {
+  duration: 1,
+  x: 0,
+  rotate: 345,
+  opacity: 1,
+  delay: -0.5,
+});
 
 tlWeb.to(".project_box .detail_container", {
   duration: 1,
@@ -46,12 +52,6 @@ tlScript.to(".project_container_script #subTitle2 ", {
 
 tlScript.to(".project_container_script #subTitle2 .title_bg", {
   duration: 0.5,
-  y: 0,
-  opacity: 1,
-});
-
-tlScript.to(".project_container_script .cont1 .preview", {
-  duration: 1,
   y: 0,
   opacity: 1,
 });
